@@ -13,22 +13,43 @@
         android:theme="@style/Theme.Soto_cursus"
         tools:targetApi="31">
         <activity
+            android:name=".BDModuleAddActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BDModuleDelActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".BDModuleListActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SigleListActivity"
-            android:exported="true" >
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ModuleRecyclerActivity"
-            android:exported="true" >
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".ModuleListActivity"
-            android:exported="true" >
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

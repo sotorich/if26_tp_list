@@ -38,6 +38,7 @@ public class AdaptateurRecyclerModule extends RecyclerView.Adapter<AdaptateurRec
     }
 
     class ModuleHolder extends RecyclerView.ViewHolder{
+
         private TextView Modulesigle;
         private TextView Modulecategorie;
         private TextView Moduleparcours;
@@ -46,6 +47,7 @@ public class AdaptateurRecyclerModule extends RecyclerView.Adapter<AdaptateurRec
         ModuleHolder(View itemView)
         {
             super(itemView);
+
 
             Modulesigle = (TextView) itemView.findViewById(R.id.module_sigle);
             Modulecategorie = (TextView) itemView.findViewById(R.id.module_categorie);
@@ -56,6 +58,7 @@ public class AdaptateurRecyclerModule extends RecyclerView.Adapter<AdaptateurRec
         }
         void display(Module module)
         {
+
             Modulesigle.setText(module.getSigle());
             Modulecategorie.setText(module.getCategorie());
             Moduleparcours.setText(module.getParcours());

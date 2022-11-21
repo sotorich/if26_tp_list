@@ -9,13 +9,21 @@ public class Module implements Serializable {
     private String categorie;
     private int credit;
 
+    public Module() {
+        this.sigle = "?";
+        this.parcours = "?";
+        this.categorie = "?";
+        this.credit = 0;
+    }
+
     public Module(String sigle, String parcours, String categorie, int credit) {
         this.sigle = sigle;
-        this.setParcours(parcours);
+        this.parcours = parcours;
         this.categorie = categorie;
         this.credit = credit;
 
     }
+
 
     public String getSigle() {
         return sigle;
@@ -32,7 +40,6 @@ public class Module implements Serializable {
     public void setParcours(String parcours) {
         this.parcours = parcours;
     }
-
 
     public String getCategorie() {
         return categorie;

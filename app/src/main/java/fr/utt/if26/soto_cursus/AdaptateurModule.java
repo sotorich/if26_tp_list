@@ -36,8 +36,10 @@ public class AdaptateurModule extends ArrayAdapter<Module> {
     @Override
     public View getView(int index, View convertView, ViewGroup parent) {
 
+
         LayoutInflater inflater = ((Activity) c).getLayoutInflater();
         View v = inflater.inflate(r, parent, false);
+
 
         TextView tv = (TextView) v.findViewById(R.id.module_sigle);
         tv.setText(l.get(index).getSigle());

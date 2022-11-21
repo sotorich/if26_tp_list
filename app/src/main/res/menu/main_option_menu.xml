@@ -23,4 +23,14 @@
                 android:id="@+id/main_menu_module_del"/>
         </menu>
     </item>
+    <item android:title="@string/menu3" >
+        <menu >
+            <item android:title="@string/listbase"
+                android:id="@+id/main_menu_module_sql_list"/>
+            <item android:title="@string/add"
+                android:id="@+id/main_menu_module_sql_add"/>
+            <item android:title="@string/del"
+                android:id="@+id/main_menu_module_sql_del"/>
+        </menu>
+    </item>
 </menu>

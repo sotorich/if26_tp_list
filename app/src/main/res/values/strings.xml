@@ -2,7 +2,9 @@
     <string name="app_name">Soto_cursus</string>
     <string name="menu1">Sigle</string>
     <string name="menu2">Module</string>
+    <string name="menu3">Module SQL</string>
     <string name="list">list{listView}</string>
+    <string name="listbase">list</string>
     <string name="list_recycler">list{RecyclerView}</string>
     <string name="add">add</string>
     <string name="del">del</string>

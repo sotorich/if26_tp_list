@@ -64,6 +64,16 @@ public class MainActivity extends AppCompatActivity {
             case R.id.main_menu_module_del:
                 moduleDel();
                 break;
+            case R.id.main_menu_module_sql_list:
+                moduleSqlList();
+                break;
+            case R.id.main_menu_module_sql_add:
+                moduleSqlAdd();
+                break;
+            case R.id.main_menu_module_sql_del:
+                moduleSqlDelete();
+                break;
+
         }
 
         return true;
@@ -95,6 +105,20 @@ public class MainActivity extends AppCompatActivity {
     }
     private void moduleDel() {
         Toast.makeText(this, "Je veux supprimer des modules", Toast.LENGTH_LONG).show();
+    }
+
+    private void moduleSqlList() {
+        Intent intent = new Intent(this,BDModuleListActivity.class);
+        startActivity(intent);
+    }
+
+    private void moduleSqlAdd() {
+        Intent intent = new Intent(this, BDModuleAddActivity.class);
+        startActivity(intent);
+    }
+    private void moduleSqlDelete() {
+        Intent intent = new Intent(this, BDModuleDelActivity.class);
+        startActivity(intent);
     }
 
     @Override
