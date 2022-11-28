@@ -73,6 +73,15 @@ public class MainActivity extends AppCompatActivity {
             case R.id.main_menu_module_sql_del:
                 moduleSqlDelete();
                 break;
+            case R.id.main_menu_module_room_list:
+                moduleRoomList();
+                break;
+            case R.id.main_menu_module_room_add:
+                moduleRoomAdd();
+                break;
+            case R.id.main_menu_module_room_del:
+                moduleRoomDelete();
+                break;
 
         }
 
@@ -120,6 +129,19 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BDModuleDelActivity.class);
         startActivity(intent);
     }
+
+    private void moduleRoomList() {
+        Intent intent = new Intent(this,RoomModuleListActivity.class);
+        startActivity(intent);
+    }
+
+    private void moduleRoomAdd() {
+        Toast.makeText(this, "Je veux ajouter des modules", Toast.LENGTH_LONG).show();
+    }
+    private void moduleRoomDelete() {
+        Toast.makeText(this, "Je veux supprimer des modules", Toast.LENGTH_LONG).show();
+    }
+
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
